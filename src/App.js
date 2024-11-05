@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route} from 'react-router-dom';
+import SignIn from "./components/UserSession/SignIn/index.tsx"
+import UserSession from './components/UserSession/index.js';
+import MainContent from './components/MainContent/index.tsx';
+import EuropeContent from './components/MainContent/EuropeContent/index.tsx';
+import "./styles/styles.css"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<UserSession />}/>
+        <Route path="/Inicio" element={<MainContent />}/>
+        <Route path='/Continente_Europeo' element = {<EuropeContent />}/>
+      </Routes>
     </div>
   );
 }

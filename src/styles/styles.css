@@ -1,0 +1,105 @@
+body {
+  margin: 0px;
+}
+body .App {
+  font-family: "Rubik", "Courier New", Courier, monospace;
+}
+body .App .header {
+  display: flex;
+  width: 100%;
+  background-color: #49fbfe;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+body .App .header__title {
+  font-style: italic;
+}
+body .App .header__nav {
+  padding: 0.7vw;
+  margin: 0.8vw;
+  box-sizing: border-box;
+}
+body .App .header__nav--linkInicio, body .App .header__nav--linkEuropa {
+  margin: 1vw;
+  text-decoration: none;
+}
+body .App .header__search {
+  padding: 0.7vw;
+  display: flex;
+  padding: 0.7vw;
+  flex-flow: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+body .App .header__search--label, body .App .header__search--searchBox {
+  margin: 0.6vw;
+}
+body .App .header__search--info {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+body .App .header__search--info__title {
+  text-align: center;
+}
+body .App main {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccbfa0;
+  width: 100%;
+  height: 100%;
+}
+body .App main .Forms {
+  display: flex;
+  gap: 4vw;
+  justify-content: center;
+  height: 46vw;
+}
+body .App main .Forms .formSignIn,
+body .App main .Forms .formLogIn {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+body .App main .isLoading {
+  margin: auto;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3vw;
+  margin: 3vw;
+  padding: 5vw;
+  box-sizing: border-box;
+}
+body .App main .info {
+  text-align: center;
+}
+body .App main .mainContent {
+  box-sizing: border-box;
+  padding: 3vw;
+  gap: 2vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+}
+body .App main .mainContent__countrie {
+  padding: 1vw;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #fad57d;
+  align-content: center;
+  border-radius: 1vw;
+}
+body .App main .mainContent__countrie--name, body .App main .mainContent__countrie--capital, body .App main .mainContent__countrie--continent, body .App main .mainContent__countrie--population, body .App main .mainContent__countrie--languages {
+  margin: 1vw;
+  text-align: center;
+}
+body .App main .mainContent__countrie--ubication {
+  text-align: center;
+}
+
+body .App main .mainContent__countrie--flag {
+  width: 15.583vw;
+  height: 11.417vw;
+  padding: 1vw;
+}/*# sourceMappingURL=styles.css.map */

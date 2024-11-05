@@ -1,0 +1,15 @@
+body {
+    .App {
+        main {
+            .mainContent {
+                &__countrie {
+                    &--flag {
+                        width: 15.583vw;
+                        height: 11.417vw;
+                        padding: 1vw;
+                    }
+                }
+            }
+        }
+    }
+}

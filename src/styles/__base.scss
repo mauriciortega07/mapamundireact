@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+
+    .App {
+        font-family: "Rubik", "Courier New", Courier, monospace;
+
+        .header {
+            display: flex;
+            width: 100%;
+            background-color: #49fbfe;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vw;
+
+            &__title {
+                font-style: italic;
+            }
+
+            &__nav {
+                padding: .7vw;
+                margin: .8vw;
+                box-sizing: border-box;
+
+                &--linkInicio,
+                &--linkEuropa {
+                    margin: 1vw;
+                    text-decoration: none;
+                }
+            }
+
+            &__search {
+                padding: .7vw;
+                display: flex;
+                padding: 0.7vw;
+                flex-flow: column;
+                align-items: center;
+                box-sizing: border-box;
+
+
+                &--label,
+                &--searchBox {
+                    margin: .6vw;
+                }
+
+                &--info {
+                    display: flex;
+                    flex-flow: column wrap;
+                    align-content: center;
+
+                    &__title {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            background-color: #ccbfa0;
+            width: 100%;
+            height: 100%;
+
+            .Forms {
+                display: flex;
+                gap: 4vw;
+                justify-content: center;
+                height: 46vw;
+
+                .formSignIn,
+                .formLogIn {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1vw;
+                }
+            }
+
+            .isLoading {
+                margin: auto;
+                text-align: center;
+                font-weight: 800;
+                font-size: 3vw;
+                margin: 3vw;
+                padding: 5vw;
+                box-sizing: border-box;
+
+            }
+
+            .info {
+                text-align: center
+            }
+
+            .mainContent {
+                box-sizing: border-box;
+                padding: 3vw;
+                gap: 2vw;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+
+                &__countrie {
+                    padding: 1vw;
+                    display: flex;
+                    flex-flow: column wrap;
+                    background-color: #fad57d;
+                    align-content: center;
+                    border-radius: 1vw;
+
+                    &--name,
+                    &--capital,
+                    &--continent,
+                    &--population,
+                    &--languages {
+                        margin: 1vw;
+                        text-align: center;
+                    }
+
+                    &--ubication {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
