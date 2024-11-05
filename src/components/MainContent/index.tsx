@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "../Header/index.tsx";
+import Header from "../Header/index";
 import axios from "axios";
-import useGetData from "../../hooks/useGetData.ts";
-import useHandleInput from "../../hooks/useHandleInput.ts";
+import useGetData from "../../hooks/useGetData";
+import useHandleInput from "../../hooks/useHandleInput";
 
 type searchTextState = {
     searchText: string;
@@ -39,7 +39,7 @@ const MainContent = () => {
     const renderResults = (countrieSearch: any) => (
         <section className="mainContent">
             {
-                countrieSearch.map((countrie) => {
+                countrieSearch.map((countrie: { cca2: any; capital: any; translations: any; flags: any; continents: any; population: any; languages: any; name: any; maps: any; }) => {
                     const { cca2, capital, translations, flags, continents, population, languages, name,maps } = countrie;
 
                     const languagesAssignment = () => {

@@ -22,7 +22,7 @@ const Login = () => {
 
         const Users = JSON.parse(localStorage.getItem("users") || '[]');
 
-        const validUsers = Users.find(user => user.email === email   && user.password === password);
+        const validUsers = Users.find((user: { email: string; password: string; }) => user.email === email   && user.password === password);
 
         if (!validUsers) {
             alert("No existe un usuario con estas credenciales");

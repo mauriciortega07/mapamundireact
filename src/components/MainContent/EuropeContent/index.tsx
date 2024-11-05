@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Header from "../../Header/index.tsx";
-import useGetData from "../../../hooks/useGetData.ts";
+import Header from "../../Header/index";
+import useGetData from "../../../hooks/useGetData";
 
 type searchTextState = {
     searchText: string
@@ -36,7 +36,7 @@ const EuropeContent = () => {
 
             {
                 //FUNCIONES JS
-                countrieSearch.map(countrie => {
+                countrieSearch.map((countrie: { cca2: any; capital: any; languages: any; population: any; continents: any; name: any; flags: any; maps: any; }) => {
                     const { cca2, capital, languages, population, continents, name, flags, maps } = countrie;
 
                     const languagesAssignment = () => {

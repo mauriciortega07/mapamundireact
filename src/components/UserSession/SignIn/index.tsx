@@ -38,7 +38,7 @@ const SignIn = () => {
         const {name, lastname, email, password} = form;
 
         const Users = JSON.parse(localStorage.getItem("users") || '[]');
-        const isUsersRegistered = Users.find(user => user.email === email);
+        const isUsersRegistered = Users.find((user: { email: string; }) => user.email === email);
 
         if(isUsersRegistered){
             alert("Usuario ya existente");
@@ -57,7 +57,7 @@ const SignIn = () => {
     }
 
     return (
-        <>
+        <section className="Signin">
             <form className="formSignIn" onSubmit={handleSubmit}>
                 <h3 className="formSignIn__title">Registrate</h3>
                 <label className="formSignIn__titleName">Nombre:</label>
@@ -101,7 +101,7 @@ const SignIn = () => {
 
             </form>
 
-        </>
+        </section>
     )
 }
 

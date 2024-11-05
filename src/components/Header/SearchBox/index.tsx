@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useHandleInput from '../../../hooks/useHandleInput.ts';
+import useHandleInput from '../../../hooks/useHandleInput';
 
 interface SearchBoxProps {
     textSearch: string;

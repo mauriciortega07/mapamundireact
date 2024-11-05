@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBox from "./SearchBox/index.tsx";
+import SearchBox from "./SearchBox/index";
 import {Link, NavLink} from "react-router-dom";
 
 interface HeaderProps {
